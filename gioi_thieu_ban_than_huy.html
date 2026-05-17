@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nguyễn Xuân Huy | IT Student</title>
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #ffffff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 25px 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #1e3c72;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-left: 5px solid #2a5298;
+            padding-left: 12px;
+        }
+
+        p {
+            margin: 0 0 10px 0;
+            text-align: justify;
+        }
+
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0 0 0;
+        }
+
+        .info-list li {
+            margin-bottom: 8px;
+            font-size: 1.05rem;
+        }
+
+        .info-list strong {
+            color: #2a5298;
+            min-width: 120px;
+            display: inline-block;
+        }
+
+        .skill-category {
+            margin-bottom: 15px;
+        }
+
+        .skill-category h3 {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 8px;
+            margin-top: 0;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #eef2f7;
+            color: #1e3c72;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 4px 4px 4px 0;
+            font-weight: 500;
+            border: 1px solid #d0daf0;
+        }
+
+        .project-item {
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .project-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2a5298;
+            margin-bottom: 5px;
+        }
+
+        .project-tech {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .personal-traits, .interests {
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #777777;
+            font-size: 0.9rem;
+            margin-top: 30px;
+            border-top: 1px solid #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <header>
+            <h1>NGUYỄN XUÂN HUY</h1>
+            <p>Sinh viên Công nghệ Thông tin</p>
+        </header>
+
+        <!-- Giới thiệu chung -->
+        <section id="gioi-thieu">
+            <h2>Giới thiệu chung</h2>
+            <p>
+                Xin chào! Tôi hiện là sinh viên ngành Công nghệ Thông tin. Với niềm yêu thích và định hướng phát triển 
+                trong lĩnh vực lập trình, tôi đã chủ động tích lũy kiến thức cơ bản thông qua các môn học cốt lõi, bài tập lớn 
+                và các đồ án thực hành tại trường.
+
+                Bản thân tôi luôn mong muốn áp dụng những kiến thức lý thuyết đã học vào thực tế thông qua các dự án xây dựng
+                 ứng dụng quản lý hoặc thiết kế hệ thống website cơ bản. Tôi luôn sẵn sàng tiếp thu những công nghệ mới, đối mặt
+                  với thử thách để từng bước hoàn thiện tư duy lập trình và nâng cao năng lực chuyên môn của mình.
+            </p>
+            <ul class="info-list">
+                <li><strong>Ngày sinh:</strong> 12/09/2005</li>
+                <li><strong>Email:</strong> huyn73683@gmail.com</li>
+                <li><strong>GitHub:</strong> github.com/huynguyen1209</li>
+            </ul>
+        </section>
+
+        <!-- Kỹ năng chuyên môn -->
+        <section id="ky-nang">
+            <h2>Kỹ năng chuyên môn</h2>
+            
+            <div class="skill-category">
+                <h3>Ngôn ngữ lập trình cơ bản:</h3>
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">PHP</span>
+                    <span class="tag">C/C++</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Phát triển Web cơ bản:</h3>
+                <div class="tags">
+                    <span class="tag">HTML & CSS</span>
+                    <span class="tag">JavaScript (Cơ bản)</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Cơ sở dữ liệu & Công cụ:</h3>
+                <div class="tags">
+                    <span class="tag">MySQL</span>
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">XAMPP</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dự án tiêu biểu -->
+        <section id="du-an">
+            <h2>Dự án học tập tiêu biểu</h2>
+            
+            <div class="project-item">
+                <div class="project-title">1. Website Giới thiệu Văn hóa và Ẩm thực (Đồ án môn học)</div>
+                <div class="project-tech">Công nghệ sử dụng: PHP, MySQL, HTML, CSS, JavaScript</div>
+                <p>
+                    Xây dựng website hiển thị danh sách các địa điểm du lịch và món ăn đặc sản. 
+                    Dự án có trang Admin cơ bản để thực hiện các chức năng Thêm, Sửa, Xóa bài viết, 
+                    địa điểm và quản lý phản hồi của người dùng trên hệ thống.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">2. Ứng dụng Đồng hồ Báo thức Kỹ thuật số (Đồ án Vi điều khiển)</div>
+                <div class="project-tech">Công nghệ sử dụng: Arduino, C/C++, Mạch mô phỏng Proteus</div>
+                <p>
+                    Thiết kế và lập trình hệ thống đồng hồ báo thức sử dụng vi điều khiển Arduino kết hợp mạch thời gian thực RTC DS1307 và màn hình hiển thị LCD. 
+                    Ứng dụng hỗ trợ hiển thị thời gian thực chính xác và thiết lập chuông báo giờ qua hệ thống nút bấm.
+                </p>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">3. Phần mềm Quản lý Cửa hàng Balo & Túi xách (Bài tập lớn)</div>
+                <div class="project-tech">Công nghệ sử dụng: Java (Swing / JDBC), MySQL</div>
+                <p>
+                    Phát triển phần mềm quản lý chạy trên máy tính (Desktop App) theo kiến trúc 3 lớp (GUI - BLL - DAL). 
+                    Hỗ trợ nhân viên thực hiện các thao tác quản lý danh mục sản phẩm, lập hóa đơn bán hàng và lưu trữ thông tin khách hàng vào cơ sở dữ liệu.
+                </p>
+            </div>
+        </section>
+
+        <!-- Đặc điểm và Sở thích -->
+        <section id="dac-diem-so-thich">
+            <h2>Đặc điểm & Sở thích</h2>
+            
+            <div class="personal-traits">
+                <p><strong>Đặc điểm cá nhân:</strong></p>
+                <ul>
+                    <li>Có tính kiên trì, cẩn thận khi tìm lỗi (debug) và viết code.</li>
+                    <li>Có khả năng làm việc nhóm tốt, chủ động hoàn thành các task được giao trong bài tập lớn.</li>
+                    <li>Hòa đồng, có tinh thần cầu tiến và sẵn sàng tiếp thu những kiến thức công nghệ mới.</li>
+                </ul>
+            </div>
+
+            <div class="interests">
+                <p><strong>Sở thích:</strong></p>
+                <ul>
+                    <li>Tìm hiểu về các mạch phần cứng thông minh và lập trình ứng dụng thực tế.</li>
+                    <li>Xem các video hướng dẫn làm sản phẩm công nghệ và tối ưu hóa giao diện web trên YouTube.</li>
+                    <li>Tham gia các hội nhóm công nghệ, trò chơi cộng đồng trực tuyến cùng bạn bè để giải trí sau giờ học.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Nguyễn Xuân Huy. Cảm ơn bạn đã ghé thăm portfolio của tôi!</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
